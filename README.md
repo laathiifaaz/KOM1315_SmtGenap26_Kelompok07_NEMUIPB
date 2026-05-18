@@ -13,19 +13,6 @@ Sistem ini dikembangkan untuk menggantikan proses pelaporan barang hilang yang s
 
 ---
 
-# Fitur Utama
-
-- Lost Item Report
-- Found Item Report
-- Search & Filter Barang
-- Tracking Status Barang
-- Klaim Barang
-- Verifikasi Admin
-- Serah Terima Barang
-- Notifikasi Status Laporan
-
----
-
 # Tech Stack
 
 ## Frontend
