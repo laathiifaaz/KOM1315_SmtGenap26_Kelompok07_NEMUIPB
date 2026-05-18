@@ -2,15 +2,6 @@
 
 NEMU IPB adalah platform digital terpusat untuk sistem pelaporan, pencarian, verifikasi, klaim, dan pengelolaan barang hilang dan ditemukan di lingkungan IPB University.
 
-Sistem ini dikembangkan untuk menggantikan proses pelaporan barang hilang yang sebelumnya masih dilakukan secara informal menjadi sistem digital yang:
-- terstruktur
-- scalable
-- mudah digunakan
-- cepat diakses
-- memiliki tracking status barang
-- mendukung verifikasi admin
-- mendukung proses klaim dan serah terima barang
-
 ---
 
 # Tech Stack
