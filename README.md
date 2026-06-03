@@ -41,6 +41,7 @@ KOM1315_SmtGenap26_Kelompok07_NEMUIPB/
 │   ├── Monitoring_P7/
 │   ├── Final_Technical_Report/
 │   └── Scientific_Paper/
+├── Final Presentation_NEMU IPB.pdf
 └── README.md
 ```
 
