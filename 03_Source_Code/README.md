@@ -1,78 +1,90 @@
-# Informasi Source Code NEMU IPB
-
-## Struktur Source Code
-
-Repository ini terdiri dari dua bagian utama:
-
-```text
-backend/
-frontend/
-```
-
-## Lokasi Service Backend
-
-Beberapa service utama pada backend berada pada folder:
-
-```text
-backend/services/
-```
-
-Isi service backend meliputi:
-
-```text
-backend/services/
-├── encryption/
-├── EncryptionService.py
-├── admin_activity_service.py
-├── admin_analytics_service.py
-├── auth_service.py
-├── klaim_service.py
-├── laporan_service.py
-├── serah_terima_service.py
-└── signature_service.py
-```
-
-## Informasi Fungsi Service
-
-- `auth_service.py` digunakan untuk proses autentikasi pengguna, seperti login dan validasi user.
-- `admin_activity_service.py` digunakan untuk mencatat aktivitas admin sebagai bagian dari audit log atau accounting.
-- `admin_analytics_service.py` digunakan untuk kebutuhan analisis dan ringkasan data admin.
-- `laporan_service.py` digunakan untuk pengelolaan laporan barang hilang dan barang ditemukan.
-- `klaim_service.py` digunakan untuk proses klaim barang oleh pengguna.
-- `serah_terima_service.py` digunakan untuk proses serah terima barang setelah klaim diverifikasi.
-- `signature_service.py` digunakan untuk pembuatan dan verifikasi Digital Signature.
-- `EncryptionService.py` dan folder `encryption/` digunakan untuk kebutuhan enkripsi data pada backend.
+# Informasi Integrasi Keamanan Informasi NEMU IPB
 
 ## Catatan Integrasi Digital Signature
 
-Pada tahap pengembangan awal, implementasi Digital Signature dikembangkan sebagai komponen terpisah untuk kebutuhan implementasi dan pengujian keamanan informasi.
+Pada pengembangan NEMU IPB, implementasi Digital Signature langsung diintegrasikan ke dalam backend utama agar seluruh mekanisme keamanan informasi berada dalam satu codebase yang terpusat, lebih mudah dikelola, diuji, dan di-deploy.
 
-Pada versi pengumpulan ini, seluruh implementasi Digital Signature telah diintegrasikan ke dalam source code backend NEMU IPB sehingga tidak lagi menggunakan folder atau repository terpisah. Integrasi ini dilakukan agar seluruh mekanisme keamanan informasi berada dalam satu codebase yang terpusat, mudah diuji, dikelola, dan di-deploy.
+Dengan demikian, tidak terdapat folder Digital Signature terpisah pada repository ini karena seluruh implementasinya telah menjadi bagian dari backend aplikasi.
 
-Implementasi Digital Signature dapat ditemukan pada file:
+Implementasi utama Digital Signature dapat ditemukan pada:
 
 ```text
 backend/services/signature_service.py
 ```
 
-Sedangkan proses serah terima barang yang memanfaatkan mekanisme keamanan tersebut dapat ditemukan pada:
+Digital Signature tersebut digunakan pada proses serah terima barang yang terdapat pada:
 
 ```text
 backend/services/serah_terima_service.py
 ```
 
-Digital Signature digunakan untuk menjamin keaslian dan integritas data pada proses serah terima barang. Mekanisme pembuatan dan verifikasi tanda tangan digital diimplementasikan pada `signature_service.py` dan digunakan oleh proses bisnis yang terdapat pada `serah_terima_service.py`.
+Mekanisme ini digunakan untuk menjamin keaslian (authenticity) dan integritas (integrity) data selama proses serah terima barang.
 
-## Fitur Keamanan yang Diimplementasikan
+---
 
-Seluruh fitur keamanan berikut telah terintegrasi dengan backend aplikasi NEMU IPB:
+## File Keamanan Informasi yang Terintegrasi di Backend
 
-- Authentication menggunakan JWT
-- Authorization berbasis Role-Based Access Control
-- Accounting melalui Audit Log
-- Data Integrity menggunakan SHA-256 Hashing
-- Digital Signature
+Seluruh implementasi keamanan informasi berada pada folder:
+
+```text
+backend/services/
+```
+
+File yang terkait langsung dengan keamanan informasi meliputi:
+
+### Authentication
+
+```text
+auth_service.py
+```
+
+Digunakan untuk proses autentikasi pengguna menggunakan JWT, login, validasi identitas pengguna, dan pengelolaan sesi.
+
+### Accounting (Audit Log)
+
+```text
+admin_activity_service.py
+```
+
+Digunakan untuk mencatat aktivitas penting yang dilakukan admin sebagai bentuk audit trail dan akuntabilitas sistem.
+
+### Digital Signature
+
+```text
+signature_service.py
+```
+
+Digunakan untuk pembuatan dan verifikasi tanda tangan digital guna menjamin keaslian dan integritas data.
+
+### Implementasi Proses Serah Terima
+
+```text
+serah_terima_service.py
+```
+
+Mengimplementasikan proses bisnis serah terima barang yang memanfaatkan Digital Signature.
+
+### Data Encryption
+
+```text
+EncryptionService.py
+encryption/
+```
+
+Digunakan untuk proses enkripsi dan dekripsi data yang memerlukan perlindungan tambahan saat penyimpanan maupun pemrosesan.
+
+---
+
+## Implementasi Keamanan Informasi
+
+Berdasarkan source code yang terdapat pada backend, NEMU IPB mengimplementasikan:
+
+- Authentication
+- Authorization (Role-Based Access Control)
+- Accounting (Audit Log)
 - Data Encryption
+- Data Integrity
+- Digital Signature
 - Session Security
 
-Dengan demikian, seluruh implementasi keamanan informasi pada NEMU IPB dapat ditemukan dan dijalankan langsung melalui source code yang terdapat pada folder `backend`.
+Seluruh implementasi tersebut telah terintegrasi ke dalam backend utama aplikasi NEMU IPB dan tidak dipisahkan ke repository maupun folder tersendiri.
