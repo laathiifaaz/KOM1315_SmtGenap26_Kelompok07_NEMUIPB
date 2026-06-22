@@ -2,7 +2,7 @@
 
 ## 1. Deskripsi Proyek
 
-NEMU IPB adalah aplikasi web lost and found untuk civitas akademika IPB. Sistem ini membantu pengguna melaporkan barang hilang, melaporkan barang temuan, mengajukan klaim barang, melakukan dropoff barang temuan, serta membantu admin melakukan verifikasi laporan, klaim, dropoff, monitoring status, notifikasi, activity log, dashboard/analisis, dan serah terima barang.
+NEMU IPB adalah aplikasi web lost and found untuk civitas akademika IPB. Sistem ini membantu pengguna melaporkan barang hilang, melaporkan barang temuan, mengajukan klaim barang, melakukan dropoff barang temuan, serta membantu admin melakukan verifikasi laporan, klaim, dropoff, monitoring status, notifikasi, activity log, dashboard/analisis, dan serah terima barang..
 
 Dokumen ini berfokus pada aspek Keamanan Informasi dalam sistem NEMU IPB. Sistem dirancang dengan pemisahan frontend, backend, dan database:
 
