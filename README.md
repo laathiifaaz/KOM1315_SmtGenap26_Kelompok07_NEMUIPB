@@ -28,7 +28,6 @@ Catatan: README ini hanya menjelaskan deskripsi proyek dan panduan instalasi. Ti
 
 ## Struktur Repository
 
-```text
 KOM1315_SmtGenap26_Kelompok07_NEMUIPB/
 │
 ├── 01_Proposal_&_Analisis/
@@ -41,9 +40,10 @@ KOM1315_SmtGenap26_Kelompok07_NEMUIPB/
 │   ├── Monitoring_P7/
 │   ├── Final_Technical_Report/
 │   └── Scientific_Paper/
+│       ├── JIKA_NEMU+IPB+(2).pdf
+│       └── Bukti Submit Jurnal JIKA (2).png
 ├── Final Presentation_NEMU IPB.pdf
 └── README.md
-```
 
 ## 2. Panduan Instalasi
 
