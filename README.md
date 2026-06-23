@@ -28,22 +28,24 @@ Catatan: README ini hanya menjelaskan deskripsi proyek dan panduan instalasi. Ti
 
 ## Struktur Repository
 
-KOM1315_SmtGenap26_Kelompok07_NEMUIPB/
+```text
+KOM1315_SmtGenap26_Kelompok07_NEMUIPB
 │
-├── 01_Proposal_&_Analisis/
-├── 02_Design_Documents/
-├── 03_Source_Code/
-│   ├── frontend/
-│   ├── backend/
-│   └── digital_signature/
-├── 04_Reports_&_Paper/
-│   ├── Monitoring_P7/
-│   ├── Final_Technical_Report/
-│   └── Scientific_Paper/
+├── 01_Proposal_&_Analisis          # Proposal proyek dan hasil analisis
+├── 02_Design_Documents             # Dokumen desain sistem
+├── 03_Source_Code                  # Kode sumber aplikasi
+│   ├── frontend                    # React frontend
+│   ├── backend                     # Backend API
+│   └── digital_signature           # Modul tanda tangan digital
+├── 04_Reports_&_Paper              # Laporan dan publikasi
+│   ├── Monitoring_P7               # Monitoring proyek
+│   ├── Final_Technical_Report      # Laporan teknis akhir
+│   └── Scientific_Paper            # Artikel ilmiah
 │       ├── JIKA_NEMU+IPB+(2).pdf
 │       └── Bukti Submit Jurnal JIKA (2).png
 ├── Final Presentation_NEMU IPB.pdf
 └── README.md
+```
 
 ## 2. Panduan Instalasi
 
