@@ -219,7 +219,7 @@ http://localhost:3000
 
 ## 3. Demo Video
 
-<video src="https://youtu.be/HccRPhLmjHo" width="100%" controls></video>
+[![Tonton Video](https://youtube.com)](https://youtu.be/HccRPhLmjHo)
 
 ## 4. Catatan Keamanan Informasi
 
