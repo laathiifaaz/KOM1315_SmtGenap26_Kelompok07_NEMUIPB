@@ -217,7 +217,11 @@ Frontend lokal umumnya berjalan di:
 http://localhost:3000
 ```
 
-## 3. Catatan Keamanan Informasi
+## 3. Demo Video
+
+<video src="https://github.com/laathiifaaz/KOM1315_SmtGenap26_Kelompok07_NEMUIPB/raw/refs/heads/main/DEMO%20NEMUIPB.mp4" width="100%" controls></video>
+
+## 4. Catatan Keamanan Informasi
 
 - Gunakan HTTPS untuk backend dan frontend pada environment production.
 - Jangan commit `SECRET_KEY`, `FERNET_KEY`, `DATABASE_URL`, atau file `.env`.
