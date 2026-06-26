@@ -219,7 +219,7 @@ http://localhost:3000
 
 ## 3. Demo Video
 
-<video src="https://github.com/laathiifaaz/KOM1315_SmtGenap26_Kelompok07_NEMUIPB/raw/refs/heads/main/DEMO%20NEMUIPB.mp4" width="100%" controls></video>
+<video src="https://youtu.be/HccRPhLmjHo" width="100%" controls></video>
 
 ## 4. Catatan Keamanan Informasi
 
