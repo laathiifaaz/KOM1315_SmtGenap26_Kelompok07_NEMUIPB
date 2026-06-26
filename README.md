@@ -43,6 +43,7 @@ KOM1315_SmtGenap26_Kelompok07_NEMUIPB
 │   └── Scientific_Paper            # Artikel ilmiah
 │       ├── JIKA_NEMU+IPB+(2).pdf
 │       └── Bukti Submit Jurnal JIKA (2).png
+├── DEMO NEMUIPB.mp4
 ├── Final Presentation_NEMU IPB.pdf
 └── README.md
 ```
